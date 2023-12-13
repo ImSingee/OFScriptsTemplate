@@ -1,0 +1,29 @@
+{
+  "name": "omnifocusscripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && of-scripts-build",
+    "clean": "rm -rf ./dist",
+    "lint": "tsc",
+    "prettier": "prettier --list-different .",
+    "prettier:fix": "prettier --write .",
+    "prepare": "husky install",
+    "sync": "sh sync.sh"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "lint-staged": {
+    "*.(js|mjs|jsx|css|json|html|d.ts|ts|tsx)": "prettier --write"
+  },
+  "dependencies": {
+    "of-scripts": "^1.0.0"
+  }
+}
