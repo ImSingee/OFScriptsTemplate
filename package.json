@@ -24,6 +24,6 @@
     "*.(js|mjs|jsx|css|json|html|d.ts|ts|tsx)": "prettier --write"
   },
   "dependencies": {
-    "of-scripts": "^1.0.0"
+    "of-scripts": "^1.2.5"
   }
 }
